@@ -4,9 +4,9 @@
     <string name="app_name">SelfieCatalog</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="take_photo">Take a Photo</string>
-    <string name="view_gallery">View Gallery</string>
-    <string name="vote">Vote</string>
+    <string name="take_photo">Camera</string>
+    <string name="view_gallery">Gallery</string>
+    <string name="viewVotes">My Friends</string>
     <string name="btnIntend">Take (big) Picture</string>
     <string name="btnIntendS">Take (small) Picture</string>
     <string name="btnIntendV">Take Video</string>
@@ -17,5 +17,6 @@
     <string name="title_activity_gallery">GalleryActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="newVote">My Votes</string>
 
 </resources>
