@@ -77,16 +77,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int videoView1=0x7f09000c;
     }
     public static final class layout {
-        public static final int activity_gallery=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_splash=0x7f030002;
-        public static final int main=0x7f030003;
+        public static final int activity_camera_prog=0x7f030000;
+        public static final int activity_gallery=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_splash=0x7f030003;
+        public static final int main=0x7f030004;
     }
     public static final class menu {
-        public static final int gallery=0x7f080000;
-        public static final int gayllery=0x7f080001;
-        public static final int main=0x7f080002;
-        public static final int test_=0x7f080003;
+        public static final int camera_prog=0x7f080000;
+        public static final int gallery=0x7f080001;
+        public static final int gayllery=0x7f080002;
+        public static final int main=0x7f080003;
+        public static final int test_=0x7f080004;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -101,6 +103,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int hello_world=0x7f060002;
         public static final int newVote=0x7f060010;
         public static final int take_photo=0x7f060003;
+        public static final int title_activity_camera_prog=0x7f060011;
         public static final int title_activity_gallery=0x7f06000d;
         public static final int title_activity_gayllery=0x7f06000c;
         public static final int title_activity_test_=0x7f06000b;
