@@ -2,7 +2,6 @@ package com.selfiecatalog;
 
 import java.io.File;
 import java.io.FileOutputStream;
-
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -108,14 +107,20 @@ public class MainActivity extends Activity {
 		}
 	}
 	
-
-
+     
 	
 	public void gotoActivity1(View v){// for gallery
 		
 		Intent intent = new Intent(this, galleryActivity.class);
 		startActivity(intent);
 		Toast.makeText(getApplicationContext(), "Open Gallery", Toast.LENGTH_SHORT).show();
+	}
+	
+	//Starts CameraProgActivity by clicking on Camera_Prog Button
+    public void startProgCameraActivity(View v){// for gallery
+		
+		Intent intent = new Intent(this, CameraProgActivity.class);
+		startActivity(intent);
 	}
 	
 	public void gotoActivity(View v){
