@@ -4,14 +4,17 @@ import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 import android.view.View;
 
+import android.graphics.Bitmap;
 import android.hardware.Camera;
 import android.hardware.Camera.Size;
 
@@ -55,6 +58,26 @@ public class CameraProgActivity extends Activity implements SurfaceHolder.Callba
         shotBtn.setOnClickListener(this);
     }
 
+    /* Checks if external storage is available for read and write 
+    public boolean isExternalStorageWritable() {
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            //return true;
+           
+        }
+        return false;
+    }*/
+
+    /* Checks if external storage is available to at least read 
+    public boolean isExternalStorageReadable() {
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state) ||
+            Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
+            return true;
+        }
+        return false;
+    }*/
+    
     @Override
     protected void onResume()
     {
@@ -134,35 +157,67 @@ public class CameraProgActivity extends Activity implements SurfaceHolder.Callba
     {
         if (v == shotBtn)
         {
-            // take shot
+            
             // 	or autofocus
-
-            //camera.takePicture(null, null, null, this);
-            camera.autoFocus(this);
+        	camera.autoFocus(this);
+        	Toast toast1 = Toast.makeText(getApplicationContext(), 
+      			   "Focusing", Toast.LENGTH_SHORT); 
+      			toast1.show(); 
+      			
+      		// take shot
+            camera.takePicture(null, null, null, this);
+            
+            Toast toast2 = Toast.makeText(getApplicationContext(), 
+     			   "Took picture", Toast.LENGTH_SHORT); 
+     			toast2.show(); 
+            
         }
     }
 
     @Override
     public void onPictureTaken(byte[] paramArrayOfByte, Camera paramCamera)
     {
+    	
+    	
         // saves pics in folder /sdcard/CameraExample/
         // name of pic - System.currentTimeMillis()
 
         try
         {
-            File saveDir = new File("/sdcard/CameraExample/");
-
+            //File saveDir = new File("/sdcard/CameraExample/");
+        	String root = Environment.getExternalStorageDirectory().toString();
+            File saveDir = new File(root + "/Selfie_cat_photos");    
+            saveDir.mkdirs();
+        	
             if (!saveDir.exists())
             {
                 saveDir.mkdirs();
             }
 
-            FileOutputStream os = new FileOutputStream(String.format("/sdcard/CameraExample/%d.jpg", System.currentTimeMillis()));
+            FileOutputStream os = new FileOutputStream(String.format(saveDir+"/%d.jpg", System.currentTimeMillis()));
             os.write(paramArrayOfByte);
             os.close();
+            
+            //try {
+                //FileOutputStream out = new FileOutputStream(file);
+                //finalBitmap.compress(Bitmap.CompressFormat.JPEG, 90, out);
+                //out.flush();
+                //out.close();
+
+         //} catch (Exception e) {
+           //     e.printStackTrace();
+        // }
+            
+            Toast toast3 = Toast.makeText(getApplicationContext(), 
+      			   "Picture saved in SD card", Toast.LENGTH_SHORT); 
+      			toast3.show(); 
+            
         }
         catch (Exception e)
         {
+        	Toast toast = Toast.makeText(getApplicationContext(), 
+        			   "Exeption", Toast.LENGTH_SHORT); 
+        			toast.show(); 
         }
 
         // after we take shot , the preview turned off. need turn it on
