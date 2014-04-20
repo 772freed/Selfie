@@ -39,16 +39,13 @@ public class MainActivity extends Activity {
 	
 	private ImageView imageView;
 	ImageView ivPhoto;
-	File myFilesDir;
+
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-	    ivPhoto = (ImageView) findViewById(R.id.imageView1);
-	    myFilesDir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Android/data/com.selfiecatalog/files");
-	    System.out.println (myFilesDir);
-	    myFilesDir.mkdirs();
+
 		
 		
 		Gallery gallery = (Gallery) findViewById(R.id.gallery1);
@@ -111,7 +108,7 @@ public class MainActivity extends Activity {
 	
 	public void gotoActivity1(View v){// for gallery
 		
-		Intent intent = new Intent(this, galleryActivity.class);
+		Intent intent = new Intent(this, ImageThumbnailsActivity.class);
 		startActivity(intent);
 		Toast.makeText(getApplicationContext(), "Open Gallery", Toast.LENGTH_SHORT).show();
 	}
@@ -123,26 +120,9 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 	
-	public void gotoActivity(View v){
-	    Intent camIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-	    camIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(myFilesDir.toString()+"/temp.jpg")));
-	    startActivityForResult(camIntent, 0);
-	}
 
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-	    super.onActivityResult(requestCode, resultCode, data);
-	    if (requestCode==0){
-	        try {
-	            Bitmap cameraBitmap;
-	            cameraBitmap = BitmapFactory.decodeFile(myFilesDir + "/temp.jpg");
-	            Bitmap.createBitmap(cameraBitmap);
-	            ivPhoto.setImageBitmap(cameraBitmap);
-	        }
-	        catch(Exception e){
-	            e.printStackTrace();
-	        }
-	    }
-	}
+
+	
 	
 	
 	

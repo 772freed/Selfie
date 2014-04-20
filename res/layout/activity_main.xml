@@ -14,6 +14,8 @@
     
     <!-- Main Buttons -->
     
+   
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -57,7 +59,7 @@
         android:typeface="serif"
         android:background="@drawable/button_gradient"
         android:text="@string/take_photo"
-        android:onClick="gotoActivity" 
+        
         />
      <!-- Camera programmatically -->
   <Button
