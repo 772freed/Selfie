@@ -122,7 +122,7 @@ public class DisplayPicture extends Activity {
           .getExternalStorageDirectory()
           .getAbsolutePath();
         
-        String targetPath = ExternalStorageDirectoryPath + "/Selfie_cat_photos/";
+        String targetPath = ExternalStorageDirectoryPath + "/.Selfie_cat_photos/";
         
         Toast.makeText(getApplicationContext(), targetPath, Toast.LENGTH_LONG).show();
         File targetDirector = new File(targetPath);

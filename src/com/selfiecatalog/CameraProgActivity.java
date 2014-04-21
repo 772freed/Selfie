@@ -185,7 +185,7 @@ public class CameraProgActivity extends Activity implements SurfaceHolder.Callba
         {
             //File saveDir = new File("/sdcard/CameraExample/");
         	String root = Environment.getExternalStorageDirectory().toString();
-            File saveDir = new File(root + "/Selfie_cat_photos");    
+            File saveDir = new File(root + "/.Selfie_cat_photos");    
             saveDir.mkdirs();
         	
             if (!saveDir.exists())
