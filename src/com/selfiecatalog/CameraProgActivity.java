@@ -161,15 +161,15 @@ public class CameraProgActivity extends Activity implements SurfaceHolder.Callba
             // 	or autofocus
         	camera.autoFocus(this);
         	Toast toast1 = Toast.makeText(getApplicationContext(), 
-      			   "Focusing", Toast.LENGTH_SHORT); 
+      			   "Focus and take a shot", Toast.LENGTH_SHORT); 
       			toast1.show(); 
       			
       		// take shot
-            camera.takePicture(null, null, null, this);
+            //camera.takePicture(null, null, null, this);
             
-            Toast toast2 = Toast.makeText(getApplicationContext(), 
-     			   "Took picture", Toast.LENGTH_SHORT); 
-     			toast2.show(); 
+            //Toast toast2 = Toast.makeText(getApplicationContext(), 
+     			   //"Took picture", Toast.LENGTH_SHORT); 
+     			//toast2.show(); 
             
         }
     }

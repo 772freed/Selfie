@@ -27,6 +27,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    
+
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
@@ -76,23 +81,25 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int button4=0x7f090009;
         public static final int gallery1=0x7f09000a;
         public static final int gridview=0x7f090003;
-        public static final int imageView1=0x7f09000f;
+        public static final int imageView21=0x7f09000f;
         public static final int imgLogo=0x7f09000b;
         public static final int videoView1=0x7f090010;
     }
     public static final class layout {
         public static final int activity_camera_prog=0x7f030000;
-        public static final int activity_gallery=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int activity_splash=0x7f030003;
-        public static final int main=0x7f030004;
+        public static final int activity_display_picture=0x7f030001;
+        public static final int activity_gallery=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_splash=0x7f030004;
+        public static final int main=0x7f030005;
     }
     public static final class menu {
         public static final int camera_prog=0x7f080000;
-        public static final int gallery=0x7f080001;
-        public static final int gayllery=0x7f080002;
-        public static final int main=0x7f080003;
-        public static final int test_=0x7f080004;
+        public static final int display_picture=0x7f080001;
+        public static final int gallery=0x7f080002;
+        public static final int gayllery=0x7f080003;
+        public static final int main=0x7f080004;
+        public static final int test_=0x7f080005;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -108,6 +115,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int newVote=0x7f060010;
         public static final int take_photo=0x7f060003;
         public static final int title_activity_camera_prog=0x7f060011;
+        public static final int title_activity_display_one_picture=0x7f060012;
+        public static final int title_activity_display_picture=0x7f060013;
         public static final int title_activity_gallery=0x7f06000d;
         public static final int title_activity_gayllery=0x7f06000c;
         public static final int title_activity_test_=0x7f06000b;

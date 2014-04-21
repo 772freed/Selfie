@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
 		
 		Gallery gallery = (Gallery) findViewById(R.id.gallery1);
 		gallery.setAdapter(new ImageAdapter(this));
-		imageView = (ImageView) findViewById(R.id.imageView1);
+		imageView = (ImageView) findViewById(R.id.imageView21);
 		gallery.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
@@ -108,7 +108,7 @@ public class MainActivity extends Activity {
 	
 	public void gotoActivity1(View v){// for gallery
 		
-		Intent intent = new Intent(this, ImageThumbnailsActivity.class);
+		Intent intent = new Intent(this, DisplayPicture.class);
 		startActivity(intent);
 		Toast.makeText(getApplicationContext(), "Open Gallery", Toast.LENGTH_SHORT).show();
 	}

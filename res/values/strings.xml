@@ -19,5 +19,7 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="newVote">My Votes</string>
     <string name="title_activity_camera_prog">CameraProgActivity</string>
+    <string name="title_activity_display_one_picture">DisplayOnePicture</string>
+    <string name="title_activity_display_picture">DisplayPicture</string>
 
 </resources>
