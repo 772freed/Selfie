@@ -166,7 +166,6 @@ public class CameraProgActivity extends Activity implements SurfaceHolder.Callba
       			
       		// take shot
             //camera.takePicture(null, null, null, this);
-            
             //Toast toast2 = Toast.makeText(getApplicationContext(), 
      			   //"Took picture", Toast.LENGTH_SHORT); 
      			//toast2.show(); 
