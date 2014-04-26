@@ -13,11 +13,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 import android.view.View;
-
-import android.graphics.Bitmap;
 import android.hardware.Camera;
 import android.hardware.Camera.Size;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

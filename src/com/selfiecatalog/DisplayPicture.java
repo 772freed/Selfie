@@ -2,11 +2,11 @@ package com.selfiecatalog;
 
 import java.io.File;
 import java.util.ArrayList;
-
 import android.os.Bundle;
 import android.os.Environment;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.View;
@@ -124,7 +124,7 @@ public class DisplayPicture extends Activity {
         
         String targetPath = ExternalStorageDirectoryPath + "/.Selfie_cat_photos/";
         
-        Toast.makeText(getApplicationContext(), targetPath, Toast.LENGTH_LONG).show();
+       // Toast.makeText(getApplicationContext(), targetPath, Toast.LENGTH_LONG).show();
         File targetDirector = new File(targetPath);
         
         File[] files = targetDirector.listFiles();
@@ -143,10 +143,13 @@ public class DisplayPicture extends Activity {
   public void onItemClick(AdapterView<?> parent, View view, int position,
     long id) {
    String prompt = (String)parent.getItemAtPosition(position);
-   Toast.makeText(getApplicationContext(), 
-     prompt, 
-     Toast.LENGTH_LONG).show();
-   
+   //Toast.makeText(getApplicationContext(), 
+     //prompt, 
+    // Toast.LENGTH_SHORT).show();
+   Intent i= new Intent(DisplayPicture.this.getApplicationContext(),PhotoEditActivity.class);
+   i.putExtra("prompt", prompt);
+   startActivity(i);
+   //finish(); 
   }};
 
 }

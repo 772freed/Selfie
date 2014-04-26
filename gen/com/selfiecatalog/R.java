@@ -43,53 +43,42 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int buttons_text_size=0x7f050004;
     }
     public static final class drawable {
-        public static final int antartica1=0x7f020000;
-        public static final int antartica10=0x7f020001;
-        public static final int antartica2=0x7f020002;
-        public static final int antartica3=0x7f020003;
-        public static final int antartica4=0x7f020004;
-        public static final int antartica5=0x7f020005;
-        public static final int antartica6=0x7f020006;
-        public static final int antartica7=0x7f020007;
-        public static final int antartica8=0x7f020008;
-        public static final int antartica9=0x7f020009;
-        public static final int bg_main=0x7f02000a;
-        public static final int button_gradient=0x7f02000b;
-        public static final int camera=0x7f02000c;
-        public static final int camera_icon=0x7f02000d;
-        public static final int gallery_icon=0x7f02000e;
-        public static final int gradient_background=0x7f02000f;
-        public static final int ic_launcher=0x7f020010;
-        public static final int icon=0x7f020011;
-        public static final int login_1=0x7f020012;
-        public static final int vote_icon=0x7f020013;
-        public static final int wwe_logo=0x7f020014;
+        public static final int bg_main=0x7f020000;
+        public static final int button_gradient=0x7f020001;
+        public static final int camera=0x7f020002;
+        public static final int camera_icon=0x7f020003;
+        public static final int gallery_icon=0x7f020004;
+        public static final int gradient_background=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int icon=0x7f020007;
+        public static final int vote_icon=0x7f020008;
+        public static final int wwe_logo=0x7f020009;
     }
     public static final class id {
         public static final int Button01=0x7f090002;
         public static final int FrameLayout01=0x7f090000;
-        public static final int PhoneImageGrid=0x7f090004;
+        public static final int PhoneImageGrid=0x7f09000b;
         public static final int SurfaceView01=0x7f090001;
         public static final int action_settings=0x7f090011;
-        public static final int btnCapture=0x7f090007;
+        public static final int btnCapture=0x7f090005;
         public static final int btnIntend=0x7f09000c;
         public static final int btnIntendS=0x7f09000d;
         public static final int btnIntendV=0x7f09000e;
-        public static final int button1=0x7f090006;
-        public static final int button2=0x7f090005;
-        public static final int button3=0x7f090008;
-        public static final int button4=0x7f090009;
-        public static final int gallery1=0x7f09000a;
+        public static final int button2=0x7f090004;
+        public static final int button3=0x7f090006;
+        public static final int button4=0x7f090007;
+        public static final int gallery1=0x7f090008;
         public static final int gridview=0x7f090003;
         public static final int imageView21=0x7f09000f;
-        public static final int imgLogo=0x7f09000b;
+        public static final int imagea=0x7f090009;
+        public static final int imgLogo=0x7f09000a;
         public static final int videoView1=0x7f090010;
     }
     public static final class layout {
         public static final int activity_camera_prog=0x7f030000;
         public static final int activity_display_picture=0x7f030001;
-        public static final int activity_gallery=0x7f030002;
-        public static final int activity_main=0x7f030003;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_photo_edit=0x7f030003;
         public static final int activity_splash=0x7f030004;
         public static final int main=0x7f030005;
     }
@@ -99,7 +88,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int gallery=0x7f080002;
         public static final int gayllery=0x7f080003;
         public static final int main=0x7f080004;
-        public static final int test_=0x7f080005;
+        public static final int photo_edit=0x7f080005;
+        public static final int test_=0x7f080006;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -119,6 +109,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int title_activity_display_picture=0x7f060013;
         public static final int title_activity_gallery=0x7f06000d;
         public static final int title_activity_gayllery=0x7f06000c;
+        public static final int title_activity_photo_edit=0x7f060014;
         public static final int title_activity_test_=0x7f06000b;
         public static final int viewVotes=0x7f060005;
         public static final int view_gallery=0x7f060004;

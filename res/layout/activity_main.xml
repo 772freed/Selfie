@@ -45,22 +45,6 @@
 
          />
      
- <!-- Camera -->
-     <Button
-        android:id="@+id/button1"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/camera_icon"
-        android:drawablePadding="10dp"
-        android:layout_height="match_parent"
-                android:textStyle="normal"
-        android:textSize="@dimen/buttons_text_size"
-        android:textColor="@android:color/white"
-        android:typeface="serif"
-        android:background="@drawable/button_gradient"
-        android:text="@string/take_photo"
-        
-        />
      <!-- Camera programmatically -->
   <Button
         android:id="@+id/btnCapture"
@@ -74,7 +58,7 @@
         android:textColor="@android:color/white"
         android:typeface="serif"
         android:background="@drawable/button_gradient"
-        android:text="photo_Prog"
+        android:text="@string/take_photo"
         android:onClick="startProgCameraActivity"
          
         />

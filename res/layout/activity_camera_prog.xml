@@ -3,13 +3,14 @@
     android:id="@+id/FrameLayout01" 
     android:layout_width="fill_parent" 
     android:layout_height="fill_parent"
-    android:background="#A0C3FF"
+    android:background="#363636"
     xmlns:android="http://schemas.android.com/apk/res/android">
    
     <SurfaceView 
         android:id="@+id/SurfaceView01" 
         android:layout_width="wrap_content" 
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
     </SurfaceView>
     
     <Button 
@@ -17,7 +18,7 @@
         android:id="@+id/Button01" 
         android:layout_width="wrap_content" 
         android:layout_height="wrap_content"
-       	android:layout_gravity="bottom"
+       	android:layout_gravity="bottom|center_horizontal"
         >
     </Button>
     
